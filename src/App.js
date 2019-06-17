@@ -8,26 +8,37 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-        <Header className='header-color' title="Title" scroll>
+        <Header
+          className="header-color"
+          title={
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
+              Home
+            </Link>
+          }
+          scroll
+        >
           <Navigation>
             <Link to="/">Home</Link>
-            <Link to="/aboutme">About Me</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/contactme">Contact Me</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title={
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
+              Home
+            </Link>
+          }>
           <Navigation>
             <Link to="/">Home</Link>
-            <Link to="/aboutme">About Me</Link>
+
             <Link to="/projects">Projects</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/contactme">Contact Me</Link>
           </Navigation>
         </Drawer>
         <Content>
-             <div className="page-content" />
+          <div className="page-content" />
           <Main />
         </Content>
       </Layout>
