@@ -12,7 +12,7 @@ class Resume extends Component {
         degree: 'M.S.',
         schoolName: 'George Washtington University',
         schoolAddress: 'Washington D.C.',
-        id:1
+        id: 1,
       },
       {
         start: 2010,
@@ -20,10 +20,33 @@ class Resume extends Component {
         degree: 'M.S.',
         schoolName: 'George Washtington University',
         schoolAddress: 'Washington D.C.',
-        id:2
+        id: 2,
       },
-    ]
-  }
+    ],
+    empHistory: [
+      {
+        start: 2019.1,
+        end: '',
+        title: 'software developer',
+        companyName: 'JK Moving Service',
+        jobDetail: [
+          {
+            des:
+              'Successfully launch the estimate email process application for sales team on the second month of my employment.',
+            id: 1,
+          },
+          {
+            des:
+              'Respond to assigned tickets in good manner, provide the fix on time.',
+            id: 2,
+          },
+        ],
+        techStack:
+          '.Net 4.6.1, visual studio 2017, .net web api, Windows service (TopShelf), Microsoft Flow, Microsoft Dynamic 365 (on premise), SharePoint online, Xamarin native app .',
+        id: 1,
+      },
+    ],
+  };
   render() {
     return (
       <div>
@@ -41,22 +64,12 @@ class Resume extends Component {
             <p>yuanyaom@gmail.com</p>
           </Cell>
           <Cell col={8} className="resume-right-col">
-            <h2>Education</h2>
-            <Education
-              eduHistory={this.state.eduHistory[0]}
-            />
-            <Education
-              eduHistory={this.state.eduHistory[1]}
-            />
-            
-            <hr style={{ borderTop: '3px solid #e22947' }} />
             <h2>Experience</h2>
-            <Experience
-              start={2011.1}
-              end={2011.9}
-              jobName="software developer"
-              jobDescription=""
-            />
+            <Experience empHistory={this.state.empHistory[0]} />
+            <hr style={{ borderTop: '3px solid #e22947' }} />
+            <h2>Education</h2>
+            <Education eduHistory={this.state.eduHistory[0]} />
+            <Education eduHistory={this.state.eduHistory[1]} />
           </Cell>
         </Grid>
       </div>
