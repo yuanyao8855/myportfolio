@@ -136,4 +136,22 @@ width: 100%;
   color:white;
   padding: 2em;
 }
+
+.resume-right-col .timeline{
+  font-style: italic;
+}
+
+.resume-right-col h5{
+  font-family: 'Anton', sans-serif;
+}
+.resume-right-col .description{
+  font-family: 'Oxygen', sans-serif;
+}
+
+.resume-right-col  i{
+  font-size: 10px;
+ vertical-align: middle;
+}
+
+
 /* resume page css end*/

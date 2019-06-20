@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
+import Skills from './skills'
 import avatarPic from '../pic/software-developer-avatar.png';
 class Resume extends Component {
   state = {
@@ -9,7 +10,7 @@ class Resume extends Component {
       {
         start: 2010,
         end: 2012,
-        degree: 'M.S.',
+        degree: 'M.S. EE',
         schoolName: 'George Washtington University',
         schoolAddress: 'Washington D.C.',
         id: 1,
@@ -17,33 +18,75 @@ class Resume extends Component {
       {
         start: 2010,
         end: 2012,
-        degree: 'M.S.',
-        schoolName: 'George Washtington University',
-        schoolAddress: 'Washington D.C.',
+        degree: 'B.S. EE',
+        schoolName: 'Nanjing University of Post and Telecommunication',
+        schoolAddress: 'Nanjing, China.',
         id: 2,
       },
     ],
     empHistory: [
       {
-        start: 2019.1,
+        id: 1,
+        start: '2019.1',
         end: '',
-        title: 'software developer',
+        title: 'application developer',
         companyName: 'JK Moving Service',
         jobDetail: [
           {
             des:
-              'Successfully launch the estimate email process application for sales team on the second month of my employment.',
+              'Launch the estimate email collect application from scratch.',
             id: 1,
           },
           {
             des:
-              'Respond to assigned tickets in good manner, provide the fix on time.',
+              'creat, maintain and refactory company buiness layer web service api',
             id: 2,
+          },
+          {
+            des:
+              'participate in different type sprints involing projects like SSIS package, Xamarin development and Dynamic 365 plug-in',
+            id: 3,
           },
         ],
         techStack:
-          '.Net 4.6.1, visual studio 2017, .net web api, Windows service (TopShelf), Microsoft Flow, Microsoft Dynamic 365 (on premise), SharePoint online, Xamarin native app .',
-        id: 1,
+          'kendo ui+jqury+react, .net web api, Windows service (TopShelf), Microsoft Flow, Microsoft Dynamic 365 (on premise), SharePoint online.',
+      },
+      {
+        id: 2,
+        start: '2016.7',
+        end: '2018.12',
+        title: 'Contracting Developer with Abilityone Commission',
+        companyName: 'Wemed Services Inc',
+        jobDetail: [
+          {
+            des:
+              'Support Agency Data Management System named Procurement List Information system',
+            id: 1,
+          },
+          {
+            des:
+              'Build document approval prcocess',
+            id: 2,
+          }
+        ],
+        techStack:
+          '.net web form, Windows Workflow Foundation, XML + Soap webservice',
+      },
+      {
+        id: 3,
+        start: '2013.9',
+        end: '2016.7',
+        title: 'Contracting Developer with SBA',
+        companyName: 'Dakota Consulting, Inc',
+        jobDetail: [
+          {
+            des:
+              'build investment data system for SBA, main functionalities include data collect, automate financial report and investment healthy analisis.',
+            id: 1,
+          },
+        ],
+        techStack:
+          '.net web form, .net MVC, telerik control',
       },
     ],
   };
@@ -57,15 +100,18 @@ class Resume extends Component {
             </div>
             <h2 style={{ paddingTop: '1em' }}>Yuan Yao</h2>
             <h4 style={{ color: 'grey' }}>full stack developer</h4>
-            <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-            <p>Looking for full stack web developer job.</p>
-            <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-            <h5>Email</h5>
-            <p>yuanyaom@gmail.com</p>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '65%' }} />
+            <p>Looking for full stack web developer role in metropolitan dc area.</p>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '65%' }} />
+            <h5>Skills</h5>
+            <Skills skillName='.net' years={6} />
+            <p></p>
           </Cell>
           <Cell col={8} className="resume-right-col">
             <h2>Experience</h2>
             <Experience empHistory={this.state.empHistory[0]} />
+            <Experience empHistory={this.state.empHistory[1]} />
+            <Experience empHistory={this.state.empHistory[2]} />
             <hr style={{ borderTop: '3px solid #e22947' }} />
             <h2>Education</h2>
             <Education eduHistory={this.state.eduHistory[0]} />

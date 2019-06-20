@@ -16,7 +16,7 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Full Stack Web Developer</h1>
               <hr />
-              <p>HTML/CSS | JavaScript | React | NodeJS | Express</p>
+              <p>HTML/CSS | JavaScript | React | .Net</p>
               <div className="social-links">
                 {/* LinkedIn */}
                 <a
@@ -28,7 +28,7 @@ class Landing extends Component {
                 </a>
                 {/* Github */}
                 <a
-                  href="http://google.com"
+                  href="https://github.com/yuanyao8855"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -37,7 +37,7 @@ class Landing extends Component {
 
                 {/* LeetCode */}
                 <a
-                  href="http://google.com"
+                  href="https://leetcode.com/yuanyao8855"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

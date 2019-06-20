@@ -6,15 +6,15 @@ const Education = ({eduHistory}) => {
   return (
     <Grid>
       <Cell col={4}>
-        <p>
+        <p className="timeline">
           {eduHistory.start} - {eduHistory.end}
         </p>
       </Cell>
       <Cell col={8}>
-        <h4 style={{ marginTop: '0px' }}>
-          {eduHistory.degree} {eduHistory.schoolName},{' '}
+        <h5 style={{ marginTop: '0px' }}>
+          {eduHistory.degree} - {eduHistory.schoolName},{' '}
           {eduHistory.schoolAddress}
-        </h4>
+        </h5>
       </Cell>
     </Grid>
   );

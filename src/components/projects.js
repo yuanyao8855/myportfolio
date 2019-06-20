@@ -28,13 +28,13 @@ class Projects extends Component {
                 background: 'url(' + ReactIcon + ') center / cover',
               }}
             >
-              React Project #1
+              my portfolio site
             </CardTitle>
-            <CardText>react project card text</CardText>
+            <CardText>my first react web site with Material Design Lite component</CardText>
             <CardActions border>
               <Button colored>
                 <a
-                  href="http://google.com"
+                  href="https://github.com/yuanyao8855/meetYuanWeb"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="card-link"
@@ -54,13 +54,13 @@ class Projects extends Component {
                   'url(' + ReactIcon + ') center / cover',
               }}
             >
-              React Project #2
+              React with redux project
             </CardTitle>
-            <CardText>react project card text</CardText>
+            <CardText>building</CardText>
             <CardActions border>
               <Button colored>
                 <a
-                  href="http://google.com"
+                  href="#"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="card-link"
@@ -75,13 +75,13 @@ class Projects extends Component {
     } else if (this.state.activeTab === 1) {
       return (
         <div>
-          <h1>.Net Core</h1>
+          <h1>.Net Core with Docker</h1>
         </div>
       );
     } else if (this.state.activeTab === 2) {
       return (
         <div>
-          <h1>Django</h1>
+          <h1>Flask web api in heroku</h1>
         </div>
       );
     }
@@ -96,7 +96,7 @@ class Projects extends Component {
         >
           <Tab>React</Tab>
           <Tab>.Net Core</Tab>
-          <Tab>Django</Tab>
+          <Tab>Flask</Tab>
         </Tabs>
         <section>
           <Grid>
