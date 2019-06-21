@@ -131,6 +131,9 @@ width: 100%;
 }
 /* contact page css end*/
 /* resume page css start*/
+.resume-left-col p{
+  font-family: 'Oxygen', sans-serif;
+}
 .resume-right-col{
   background: #27221f;
   color:white;

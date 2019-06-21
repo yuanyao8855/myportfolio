@@ -3,8 +3,10 @@ import { ProgressBar } from 'react-mdl';
 
 const Skills =({skillName, years})=>{
     return(
-        <div style={{display:'flex'}}>{skillName}
-        <ProgressBar style={{margin:'auto', width:'80%'}} progress={(years/6)*100} />
+        <div style={{display:'flex'}}>
+        <span style={{width:'90px'}}>{skillName}</span>
+        <ProgressBar style={{margin:'auto', width:'60%'}} progress={(years/6)*100} />
+        <span>{years} years</span>
         </div>
     )
 }
