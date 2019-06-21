@@ -1,3 +1,3 @@
-# meet yuan web
+# my portfolio
 
-this is a learning project with node js and react
+this is a learning project using react adn Material Design Lite
