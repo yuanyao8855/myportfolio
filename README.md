@@ -1,3 +1,3 @@
 # my portfolio
 
-this is a learning project using react adn Material Design Lite
+this is a learning project using react and Material Design Lite
