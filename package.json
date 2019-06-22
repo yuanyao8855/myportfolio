@@ -1,24 +1,25 @@
 {
-  "name": "meetyuanweb",
+  "name": "myportfolio",
   "version": "1.0.0",
   "description": "sample web for learning node js",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "eslint-fix": "eslint --fix \"src/**/*.js\""
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuanyao8855/meetYuanWeb.git"
+    "url": "git+https://github.com/yuanyao8855/myportfolio.git"
   },
   "keywords": [],
   "author": "Yuan Yao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yuanyao8855/meetYuanWeb/issues"
+    "url": "https://github.com/yuanyao8855/myportfolio/issues"
   },
-  "homepage": "https://github.com/yuanyao8855/meetYuanWeb#readme",
+  "homepage": "https://yuanyao8855.github.io/",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -32,6 +33,7 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-react": "^7.13.0",
     "file-loader": "^4.0.0",
+    "gh-pages": "^2.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",

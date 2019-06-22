@@ -19,32 +19,34 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <div className="project-grid">
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: 'black',
-                height: '200px',
-                background: 'url(' + ReactIcon + ') center / cover',
-              }}
-            >
-              my portfolio site
+        <Grid>
+          <Cell col={4}>
+            <Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
+              <CardTitle
+                style={{
+                  color: 'black',
+                  height: '200px',
+                  background: 'url(' + ReactIcon + ') center / cover',
+                }}
+              >
+                my portfolio site
             </CardTitle>
-            <CardText>my first react web site with Material Design Lite component</CardText>
-            <CardActions border>
-              <Button colored>
-                <a
-                  href="https://github.com/yuanyao8855/meetYuanWeb"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="card-link"
-                >
-                  Git Repo
+              <CardText>my first react web site with Material Design Lite component</CardText>
+              <CardActions border>
+                <Button colored>
+                  <a
+                    href="https://github.com/yuanyao8855/meetYuanWeb"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="card-link"
+                  >
+                    Git Repo
                 </a>
-              </Button>
-            </CardActions>
-          </Card>
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                </Button>
+              </CardActions>
+            </Card>
+          </Cell>
+          <Cell col={4}><Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
             <CardTitle
               style={{
                 color: 'black',
@@ -69,8 +71,11 @@ class Projects extends Component {
                 </a>
               </Button>
             </CardActions>
-          </Card>
-        </div>
+          </Card></Cell>
+        </Grid>
+
+
+
       );
     } else if (this.state.activeTab === 1) {
       return (
@@ -99,11 +104,9 @@ class Projects extends Component {
           <Tab>Flask</Tab>
         </Tabs>
         <section>
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
+
+          <div className="content">{this.toggleCategories()}</div>
+
         </section>
       </div>
     );

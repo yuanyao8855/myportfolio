@@ -31,15 +31,15 @@ function App() {
           }>
           <Navigation>
             <Link to="/">Home</Link>
-
             <Link to="/projects">Projects</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/contactme">Contact Me</Link>
           </Navigation>
         </Drawer>
         <Content>
-          <div className="page-content" />
+          <div className="page-content" >
           <Main />
+          </div>
         </Content>
       </Layout>
     </div>
