@@ -101,10 +101,11 @@ class Resume extends Component {
             <h2 style={{ paddingTop: '1em' }}>Yuan Yao</h2>
             <h4 style={{ color: 'grey' }}>full stack developer</h4>
             <hr style={{ borderTop: '3px solid #833fb2', width: '65%' }} />
-            <p>I started my career as a web application developer with .net stack 6 years ago. It is great 6 years for web developers.
+            {/*<p>I started my career as a web application developer with .net stack 6 years ago. It is great 6 years for web developers.
             Fancy words keep pumping up--we have vm on cloud then big data on cloud, now everything on cloud;
             we have mvc website then spa with web api, now giant application with distributed cluster; we use jquery as everything, now everything but jquery (<i className="fa fa-smile-o" aria-hidden="true"></i> this is not true, jquery is still essential);
-            <br />
+            <br />*/}
+            <p>
              Contact me <i className="fa fa-hand-o-right" aria-hidden="true"></i><a href="mailto:yuanyaom@gmail.com">yuanyaom@gmail.com</a>, if you are hiring a developer have enthusiasm in learning. 
              I am always ready for new tech stack to build neat application.
             </p>
