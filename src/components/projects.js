@@ -58,13 +58,13 @@ class Projects extends Component {
             >
               React with redux project
             </CardTitle>
-            <CardText>building</CardText>
+            <CardText>In learning. git repo come soon</CardText>
             <CardActions border>
               <Button colored>
                 <a
                   href="#"
                   rel="noopener noreferrer"
-                  target="_blank"
+                  //target="_blank"
                   className="card-link"
                 >
                   Git Repo
@@ -79,15 +79,41 @@ class Projects extends Component {
       );
     } else if (this.state.activeTab === 1) {
       return (
-        <div>
+        <div style={{margin:'40px'}}>
           <h1>.Net Core with Docker</h1>
+          <p>working project with my current employer. Personal repo come soon</p>
         </div>
       );
     } else if (this.state.activeTab === 2) {
       return (
-        <div>
-          <h1>Flask web api in heroku</h1>
-        </div>
+        <Grid>
+        <Cell col={4}>
+          <Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
+            <CardTitle
+              style={{
+                color: 'black',
+                height: '200px',
+                background: 'url(' + ReactIcon + ') center / cover',
+              }}
+            >
+              simple blog site
+          </CardTitle>
+            <CardText>Learning django project. tweet like blog post site</CardText>
+            <CardActions border>
+              <Button colored disabled>
+                <a
+                  href="https://github.com/yuanyao8855/djangoblog"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="card-link"
+                >
+                  Git Repo
+              </a>
+              </Button>
+            </CardActions>
+          </Card>
+        </Cell>
+      </Grid>
       );
     }
   }
@@ -101,7 +127,7 @@ class Projects extends Component {
         >
           <Tab>React</Tab>
           <Tab>.Net Core</Tab>
-          <Tab>Flask</Tab>
+          <Tab>Django</Tab>
         </Tabs>
         <section>
 
