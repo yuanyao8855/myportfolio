@@ -11,6 +11,7 @@ import {
   Button,
 } from 'react-mdl';
 import ReactIcon from '../pic/ReactIcon.png';
+import DjangoIcon from '../pic/django-logo-positive.png';
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,7 @@ class Projects extends Component {
     if (this.state.activeTab === 0) {
       return (
         <Grid>
-          <Cell col={4}>
+          <Cell col={5}>
             <Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
               <CardTitle
                 style={{
@@ -46,7 +47,7 @@ class Projects extends Component {
               </CardActions>
             </Card>
           </Cell>
-          <Cell col={4}><Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
+          <Cell col={5}><Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
             <CardTitle
               style={{
                 color: 'black',
@@ -87,13 +88,13 @@ class Projects extends Component {
     } else if (this.state.activeTab === 2) {
       return (
         <Grid>
-        <Cell col={4}>
+        <Cell col={5}>
           <Card shadow={5} style={{ minWidth: '300px', margin: 'auto', height: '330px' }}>
             <CardTitle
               style={{
                 color: 'black',
                 height: '200px',
-                background: 'url(' + ReactIcon + ') center / cover',
+                background: 'url(' + DjangoIcon + ') center / contain no-repeat',
               }}
             >
               simple blog site
