@@ -59,7 +59,7 @@ class Projects extends Component {
             >
               React with redux project
             </CardTitle>
-            <CardText>In learning. git repo come soon</CardText>
+            <CardText>Easy post page to learn react-redux</CardText>
             <CardActions border>
               <Button colored>
                 <a

@@ -4,19 +4,6 @@ module.exports = {
 
   entry: './src/index.js',
 
-  optimization: {
-    moduleIds: 'hashed',
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  },
   module: {
     rules: [
       {
