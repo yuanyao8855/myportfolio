@@ -62,7 +62,7 @@ class Projects extends Component {
             <CardActions border>
               <Button colored>
                 <a
-                  href="#"
+                  href="https://github.com/yuanyao8855/reduxexample"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="card-link"
